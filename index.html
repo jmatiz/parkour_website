@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Final</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+
+  <body>
+   
+    <!--Video Background-->
+    <video id="background" autoplay loop>
+      <source src="video.mp4" type="video/mp4">
+    </video> 
+    <!--Video Background-->
+
+
+
+    <!--Main Container-->
+    <div class="container-fluid"> 
+    
+      <!--Eye Button: Reveal Content (pause and mute)-->
+      <div class="row justify-content-md-center">
+        <img id="play" class="parkour_icon" onclick="pauseVideo()" src="images/pause.png" alt="pause">
+
+        <img class="parkour_icon" onclick="showContent()" src="images/eye.png" alt="eye">
+
+        <img id="mute" class="parkour_icon" onclick="muteVideo()" src="images/mute.png" alt="mute">
+      </div>
+      <!--Eye Button: Reveal Content-->
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="row justify-content-around">
+        
+        <!--Button1-->
+          <img class="parkour_icon reveal_content" id="button1"  data-toggle="modal" data-target="#modal_1" style="opacity: 0.3;" onmouseover="opacityChange1()" onmouseout="opacityChange2()" src="images/parkour_icon.png" alt="icon1">
+        <!--Button1-->
+
+        <!--Modal1-->
+        <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="modal_1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+              <div class="modal-body">
+                <a data-toggle="collapse" href="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
+                   <img class="img-fluid image_click" src="images/parkour5.png" alt="Card image cap">
+                </a>
+                <div class="collapse collapse_all" id="collapse_1">
+                  <br>
+                  <div class="card card-body bg-light">
+                    Parkour is a training discipline using movement that developed from military obstacle course training. Practitioners aim to get from one point to another in a complex environment, without assistive equipment and in the fastest and most efficient way possible.
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="https://en.wikipedia.org/wiki/Parkour">
+                  <img class="parkour_icon" id="buttonb" src="images/book.png" alt="iconb">
+                </a>
+
+
+                <a data-dismiss="modal" onclick="collapse_all()" aria-label="Close">
+                  <img class="parkour_icon" id="buttonx" src="images/ex.png" alt="iconx">
+                </a>     
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal1-->
+
+        <!--Button3-->
+          <img class="parkour_icon reveal_content" id="button3"  data-toggle="modal" data-target="#modal_3" style="opacity: 0.3;" onmouseover="opacityChange1_3()" onmouseout="opacityChange2_3()" src="images/user.png" alt="icon3">
+        <!--Button3-->
+
+        <!--Modal3-->
+        <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="modal_1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+               <div class="modal-body">
+                
+                  <div id="carouselPersonal" class="carousel slide rounded" data-ride="carousel" data-interval="4000" data-pause="hover" data-wrap="true">
+                    <ol class="carousel-indicators ">
+                       <li data-target="#carouselPersonal" data-slide-to="0" class="active"></li>
+                       <li data-target="#carouselPersonal" data-slide-to="1"></li>
+                       <li data-target="#carouselPersonal" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <a data-toggle="collapse" href="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                          <img class="d-block w-100 rounded image_click" src="images/home.jpg" alt="First slide">
+                        </a>
+                      </div>                        
+
+                      <div class="carousel-item">
+                        <a data-toggle="collapse" href="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                          <img class="d-block w-100 rounded image_click" src="images/walk.jpg" alt="Second slide">
+                        </a>
+                      </div>
+
+                      <div class="carousel-item">
+                        <a data-toggle="collapse" href="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                          <img class="d-block w-100 rounded image_click" src="images/bike.jpg" alt="Third slide">
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselPersonal" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPersonal" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+               </div>
+
+
+
+                <div class="collapse collapse_all" id="collapse_5">
+                  <br>
+                  <div class="card card-body bg-light">
+                    <span class="lead">Julian Matiz</span> was born and raised in Manhattan, and is currently residing in Inwood/Washington Heights. He studies Computer Science at Fordham University.
+                  </div>
+                </div>
+
+              <div class="modal-footer">
+              
+                  <a href="https://www.facebook.com/julianMatiz108">
+                    <img class="parkour_icon" id="buttonf" src="images/facebook.png" alt="iconf">
+                  </a>
+
+                
+                  <a href="https://www.instagram.com/jtracker108">
+                   <img class="parkour_icon" id="buttoni" src="images/white_instagram.png" alt="iconi">
+                  </a>
+                
+                 
+                  <a data-dismiss="modal" onclick="collapse_all()" aria-label="Close">
+                   <img class="parkour_icon" id="buttonx" src="images/ex.png" alt="iconx">
+                  </a>
+                  <!--<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="collapse_all()" aria-label="Close">
+                   close
+                  </button>
+                  -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Modal3-->
+
+        <!--Button2-->
+          <img class="parkour_icon reveal_content" id="button2"  data-toggle="modal" data-target="#modal_2" style="opacity: 0.3;" onmouseover="opacityChange1_2()" onmouseout="opacityChange2_2()" src="images/white_instagram.png" alt="icon2">
+        <!--Button2-->
+
+        <!--Modal2-->
+        <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="modal_1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+              <div class="modal-body">
+                
+                  <div id="carouselExampleIndicators" class="carousel slide rounded" data-ride="carousel" data-interval="6000" data-pause="hover" data-wrap="true">
+                    <ol class="carousel-indicators " onclick="collapse_all()">
+                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active" onmouseover="showLabel1()" onmouseout="hideLabel1()">
+                        <a data-toggle="collapse" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                          <img class="d-block w-100 rounded" src="images/parkour4.jpg" alt="First slide">
+                          <div id="label1" class="carousel-caption d-none d-md-block" style="opacity:0;">
+                            <h3 class="font-italic">"I guess that's just the motion"</h3>
+                          </div>
+                        </a>
+                      </div>                        
+
+                      <div class="carousel-item" onmouseover="showLabel2()" onmouseout="hideLabel2()">
+                        <a data-toggle="collapse" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                          <img class="d-block w-100 rounded" src="images/parkour2.jpg" alt="Second slide">
+                          <div id="label2" class="carousel-caption d-none d-md-block" style="opacity:0;">
+                            <h3 class="font-italic">"Somewhere between psychotic and iconic"</h3>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="carousel-item" onmouseover="showLabel3()" onmouseout="hideLabel3()">
+                        <a data-toggle="collapse" href="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                          <img class="d-block w-100 rounded" src="images/parkour3.jpg" alt="Third slide">
+                          <div id="label3" class="carousel-caption d-none d-md-block" style="opacity:0;">
+                            <h3 class="font-italic">"Until I learned my heart was all I needed"</h3>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="collapse_all()">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="collapse_all()">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                    <div class="collapse collapse_all" id="collapse_2">
+                      <br>
+                      <div class="card card-body bg-light">
+                        <p class="font-italic font-weight-light text-secondary">Pomona College Campus, Southern California</p>
+                        <p class="font-weight-light">Box Jump over railing.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse_all" id="collapse_3" >
+                      <br>
+                      <div class="card card-body bg-light">
+                        <p class="font-italic font-weight-light text-secondary">Ancient Park, New York City</p>
+                        <p class="font-weight-light">Precision Jump to wall.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse_all" id="collapse_4">
+                      <br>
+                      <div class="card card-body bg-light">
+                        <p class="font-italic font-weight-light text-secondary">Riverside Park, New York City</p>
+                        <p class="font-weight-light">Front Flip off fence.</p>
+                      </div>
+                    </div>
+
+              </div>
+              <div class="modal-footer">
+                
+                <a data-dismiss="modal" onclick="collapse_all()" aria-label="Close">
+                  <img class="parkour_icon" id="buttonx" src="images/ex.png" alt="iconx">
+                </a>                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal2-->
+
+      </div>
+
+    </div>
+    <!--Main Container-->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
